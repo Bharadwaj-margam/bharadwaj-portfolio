@@ -577,7 +577,8 @@ h4 {
 .timeline {
     position: relative;
     border-left: 2px solid rgba(255, 255, 255, 0.1);
-    padding-left: 30px;
+    padding-left: 40px;
+    /* Increased from 30px to give more room for date/title */
     margin-top: 30px;
 }
 
@@ -589,7 +590,8 @@ h4 {
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: -36px;
+    left: -46px;
+    /* Adjusted to match new padding-left (40px + border-width + half dot) */
     top: 5px;
     width: 10px;
     height: 10px;
@@ -1141,19 +1143,12 @@ h4 {
         left: 0;
     }
 
-    /* Arrows - point left always */
-    .centered-timeline .timeline-item::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent var(--bg-alt-color) transparent transparent;
-    }
-
-    /* Dots */
+    /* Hide custom centered timeline arrows and dots on mobile,
+       to rely on the base .timeline-item styling instead.
+       This prevents stray characters and overlapping dots. */
+    .centered-timeline .timeline-item::before,
     .centered-timeline .timeline-item::after {
-        left: 21px !important;
-        /* Align with line at 31px center (31 - 10) */
-        margin-left: 0;
+        display: none !important;
     }
 
     /* Modify card appearance for mobile to look like default timeline but with card style */
