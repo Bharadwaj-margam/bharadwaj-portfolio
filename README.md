@@ -3,7 +3,7 @@
 Welcome to my personal portfolio website! This project showcases my skills, experience, and academic projects as a Computer Science student specializing in AI & IPA.
 
 ## 🚀 Live Demo
-[Link to your live site will go here once deployed]
+[Bharadwaj Portfolio Live Demo](https://Bharadwaj-margam.github.io/bharadwaj-portfolio)
 
 ## 🛠️ Tech Stack
 -   **Frontend:** HTML5, CSS3, JavaScript
