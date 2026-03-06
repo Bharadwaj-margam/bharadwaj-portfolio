@@ -800,20 +800,8 @@ h4 {
     }
 
     .navbar {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        height: 100vh;
-        background-color: var(--bg-color);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: var(--transition);
-    }
-
-    .navbar.active {
-        right: 0;
+        display: none !important;
+        /* Completely hide navbar container on mobile */
     }
 
     .nav-list {
