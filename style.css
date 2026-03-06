@@ -836,6 +836,11 @@ h4 {
         transform: translateY(-9px) rotate(-45deg);
     }
 
+    /* Hide hamburger menu entirely on mobile */
+    .menu-toggle {
+        display: none;
+    }
+
     .hero .container {
         flex-direction: column-reverse;
         justify-content: center;
