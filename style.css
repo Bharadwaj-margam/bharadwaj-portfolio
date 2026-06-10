@@ -911,6 +911,16 @@ h4 {
     .timeline {
         padding-left: 20px;
     }
+
+    /* Disable custom cursor on mobile */
+    body {
+        cursor: auto;
+    }
+
+    .cursor-dot,
+    .cursor-outline {
+        display: none !important;
+    }
 }
 
 @keyframes fadeIn {
